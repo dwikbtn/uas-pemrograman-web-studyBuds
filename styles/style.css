@@ -1,3 +1,16 @@
+/* CSS Variables */
+:root {
+  --primary-color: #279b24;
+  --secondary-color: #9fa3a0;
+  --white-color: #ffffff;
+  --light-green-color: #c1e5c0;
+  --dark-color: #333333;
+  --danger-color: #e7281c;
+  --warning-color: #eeb218;
+  --gray-color-1: #fafaf6;
+  --gray-color-2: #fcfcfc;
+}
+
 /* Reset css */
 html {
   box-sizing: border-box;
@@ -36,3 +49,131 @@ img {
 }
 
 /* End reset css */
+header {
+  background-color: var(--white-color);
+  box-shadow: 0px 5px 10px 0px #0000001a;
+}
+
+.header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  all: unset;
+  cursor: pointer;
+}
+
+.header .header__browse {
+  position: relative;
+}
+
+.header .header__browse__btn {
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header__browse__category {
+  position: absolute;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px #0000001a;
+  display: flex;
+  padding: 2rem 0;
+}
+
+.header .header__browse__room__status {
+  border-right: 2px solid var(--secondary-color);
+  color: var(--dark-color);
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.header .header__browse__room__status li,
+.header__browse__room__categories li {
+  cursor: pointer;
+  padding: 0.25rem 1.5rem;
+  white-space: nowrap;
+}
+
+.header .header__browse__room__status li:hover {
+  background-color: var(--light-green-color);
+  transition: all 0.5s;
+}
+
+.header__browse__room__categories li:hover {
+  color: var(--primary-color);
+  transition: all 0.25s;
+}
+
+.header .header__browse__btn:hover {
+  color: var(--primary-color);
+  fill: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.header .header__browse__btn > svg {
+  fill: inherit;
+}
+
+.header .header__search {
+  border: 1px solid var(--primary-color);
+  border-radius: 24px;
+  padding: 0.5rem;
+  max-width: 302px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header .header__search > input {
+  all: unset;
+}
+
+.header .header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header__nav .header__nav__link {
+  all: unset;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 1rem;
+}
+
+.header .header__nav .header__nav__link:hover {
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.header .header__auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header .header__auth__btn {
+  border-radius: 40px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  padding: 0.5rem 1.25rem;
+}
+
+.header .header__auth__btn:last-child {
+  background-color: var(--primary-color);
+  font-weight: 600;
+  color: var(--white-color);
+}
