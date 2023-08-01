@@ -1,6 +1,9 @@
 <!-- 
     Nama Anggota Kelompok:
     1. I Made Dwi Darma Putra (220401010105 )
+    2. Channy Hodie Iubileaum Lim (220401010195)
+    3. Hilmi Maulana Mukhlis (220401010142)
+    4. Kristian Hananiel Hura (220401010289)
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +23,71 @@
   <body>
     <!-- Page for landing page -->
     <!-- TODO: Navbar section goes here: -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="/" class="header__logo">
+            <img src="./assets/Logo.svg" alt="Logo" />
+          </a>
+          <div class="header__browse">
+            <button class="header__browse__btn">
+              Browse
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 10.02L16.59 8.61L12 13.19L7.41 8.61L6 10.02L12 16.02L18 10.02Z"
+                />
+              </svg>
+            </button>
+            <div id="header__browse__category" style="display: none">
+              <ul class="header__browse__room__status">
+                <li>All Status</li>
+                <li>Status: Open</li>
+                <li>Status: Restricted</li>
+              </ul>
+              <ul class="header__browse__room__categories">
+                <li>Art</li>
+                <li>Biology</li>
+                <li>Business</li>
+                <li>Cooking</li>
+                <li>Fashion</li>
+                <li>Geography</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__search">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5 17.5L13.7617 13.755L17.5 17.5ZM15.8333 8.74998C15.8333 10.6286 15.0871 12.4303 13.7587 13.7587C12.4303 15.087 10.6286 15.8333 8.75001 15.8333C6.87139 15.8333 5.06972 15.087 3.74133 13.7587C2.41295 12.4303 1.66667 10.6286 1.66667 8.74998C1.66667 6.87137 2.41295 5.06969 3.74133 3.74131C5.06972 2.41293 6.87139 1.66665 8.75001 1.66665C10.6286 1.66665 12.4303 2.41293 13.7587 3.74131C15.0871 5.06969 15.8333 6.87137 15.8333 8.74998V8.74998Z"
+                stroke="#279B24"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input type="text" placeholder="Search study room" />
+          </div>
+          <nav class="header__nav">
+            <a href="/" class="header__nav__link">Home</a>
+            <a href="#" class="header__nav__link">Study Room</a>
+            <a href="#" class="header__nav__link">My Class</a>
+          </nav>
+          <div class="header__auth">
+            <button class="header__auth__btn">Sign In</button>
+            <button class="header__auth__btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- TODO: Hero Section Goes here: -->
     <!-- TODO: Avalaible class goes here -->
     <!-- TODO: Download section here: -->
@@ -31,5 +99,22 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const headerCategory = document.getElementById(
+        "header__browse__category"
+      );
+      const headerCategoryBtn = document.querySelector(".header__browse__btn");
+
+      categoryOpen = false;
+      headerCategoryBtn.addEventListener("click", function () {
+        categoryOpen = !categoryOpen;
+        console.log(categoryOpen);
+        if (categoryOpen) {
+          headerCategory.style.display = "flex";
+        } else {
+          headerCategory.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
