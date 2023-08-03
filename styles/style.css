@@ -177,3 +177,72 @@ header {
   font-weight: 600;
   color: var(--white-color);
 }
+
+/* Style for study room page */
+#class-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color);
+}
+#class-selection #room-type {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--secondary-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#class-selection #room-type > div {
+  margin-right: 48px;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+#class-selection #room-type .active {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.topics-button {
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
+.floating-div {
+  position: absolute;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+}
+
+.floating-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.floating-div ul li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.floating-div ul li:hover {
+  background-color: #f0f0f0;
+}
