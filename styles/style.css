@@ -1,6 +1,8 @@
 /* CSS Variables */
 :root {
   --primary-color: #279b24;
+  --dark-primary-color: #258822;
+  --light-primary-color: rgba(126, 239, 104, 0.8);
   --secondary-color: #9fa3a0;
   --white-color: #ffffff;
   --light-green-color: #c1e5c0;
@@ -46,6 +48,52 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Reset input border bootstrap */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {   
+  border-color: var(--primary-color);
+}
+
+/* Reset input border focus bootstrap */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: var(--light-primary-color);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+.text-primary{
+  color: var(--primary-color) !important;;
 }
 
 /* End reset css */
@@ -245,4 +293,56 @@ header {
 
 .floating-div ul li:hover {
   background-color: #f0f0f0;
+}
+
+.btn-outline-green {
+  color: #000000;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline-green:hover {
+  color: #ffffff;
+  border: 1px solid var(--dark-primary-color);
+  background-color: var(--dark-primary-color);
+}
+
+.btn-green {
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-green:hover {
+  color: #ffffff;
+  border: 1px solid var(--dark-primary-color);
+  background-color: var(--dark-primary-color);
+}
+
+.btn-green:active{
+  color: #ffffff !important;
+  border: 1px solid var(--light-primary-color) !important;
+  background-color: var(--light-primary-color) !important;
+}
+
+.background-auth{
+  background-image: url('/assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.download-section{
+  background-image: url('/assets/background-download.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--gray-color-1);
+}
+
+footer{
+  background-color: var(--dark-color);
+}
+
+footer .social-media a{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
 }
