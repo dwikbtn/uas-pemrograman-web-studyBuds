@@ -43,4 +43,72 @@ topicOptions?.forEach((option) => {
   });
 });
 
+const statusAll = document.getElementById("status-all");
+const statusOpen = document.getElementById("status-open");
+const statusRestricted = document.getElementById("status-restricted");
+
+//fungsi untuk memfilter room berdasarkan open/restricted
+//filter berdasarkan custom attribute data-open
+function filterCardsByStatus(status) {
+  const cards = document.querySelectorAll(".card-container");
+
+  cards.forEach((card) => {
+    if (status === "all") {
+      card.style.display = "block";
+      return;
+    }
+    const cardStatus = card.getAttribute("data-open");
+    if (cardStatus === status) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+statusAll.addEventListener("click", () => {
+  filterCardsByStatus("all");
+});
+
+statusOpen.addEventListener("click", () => {
+  filterCardsByStatus("open");
+});
+
+statusRestricted.addEventListener("click", () => {
+  filterCardsByStatus("restricted");
+});
+
+function filterByTopic(topic) {
+  const cards = document.querySelectorAll(".card-container");
+
+  cards.forEach((card) => {
+    if (topic === "all") {
+      card.style.display = "block";
+      return;
+    }
+    const cardTopic = card.getAttribute("data-topic");
+    if (cardTopic === topic) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+document.getElementById("topic-all").addEventListener("click", () => {
+  filterByTopic("all");
+});
+document.getElementById("topic-programming").addEventListener("click", () => {
+  filterByTopic("programming");
+});
+document.getElementById("topic-math").addEventListener("click", () => {
+  filterByTopic("math");
+});
+document.getElementById("topic-biologhy").addEventListener("click", () => {
+  filterByTopic("biologhy");
+});
+document.getElementById("topic-engineering").addEventListener("click", () => {
+  filterByTopic("engineering");
+});
+
 /**Script for study room end here */

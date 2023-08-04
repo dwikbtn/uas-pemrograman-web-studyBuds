@@ -94,13 +94,13 @@
       </div>
     </header>
     <div class="studyRoom-background">
-      <div class="container mt-5">
+      <div class="container pt-5">
         <h1 class="mb-5">Study Room</h1>
         <section id="class-selection">
           <div id="room-type">
-            <div class="active">All status</div>
-            <div>Open</div>
-            <div>Restricted</div>
+            <div id="status-all" class="active">All status</div>
+            <div id="status-open">Open</div>
+            <div id="status-restricted">Restricted</div>
           </div>
           <div id="room-filter">
             <button class="topics-button" id="topics-button">
@@ -120,10 +120,11 @@
             </button>
             <div class="floating-div" id="topic-dropdown">
               <ul>
-                <li>Biography</li>
-                <li>Math</li>
-                <li>Business</li>
-                <li>Biology</li>
+                <li id="topic-all">All topics</li>
+                <li id="topic-engineering">Engineering</li>
+                <li id="topic-math">Math</li>
+                <li id="topic-programming">Programming</li>
+                <li id="topic-biologhy">Biology</li>
               </ul>
             </div>
           </div>
@@ -132,7 +133,11 @@
       <div class="classDivider"></div>
       <div id="class-collection" class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3" data-open="open">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="open"
+            data-topic="math"
+          >
             <div class="card">
               <span class="chip-open">Open</span>
               <img
@@ -192,7 +197,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="restricted">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="restricted"
+            data-topic="biologhy"
+          >
             <div class="card">
               <span class="chip-restricted">Restricted</span>
               <img
@@ -201,7 +210,7 @@
                 alt="Class Image"
               />
               <div class="card-body">
-                <h5 class="card-title">Basic Math Decimal 1</h5>
+                <h5 class="card-title">Advance Biologhy</h5>
                 <p class="card-text">
                   <span>
                     <svg
@@ -252,7 +261,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="open">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="open"
+            data-topic="engineering"
+          >
             <div class="card">
               <span class="chip-open">Open</span>
               <img
@@ -312,7 +325,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="open">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="open"
+            data-topic="programming"
+          >
             <div class="card">
               <span class="chip-open">Open</span>
               <img
@@ -372,7 +389,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="open">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="open"
+            data-topic="math"
+          >
             <div class="card">
               <span class="chip-open">Open</span>
               <img
@@ -432,7 +453,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="restricted">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="restricted"
+            data-topic="biologhy"
+          >
             <div class="card">
               <span class="chip-restricted">Restricted</span>
               <img
@@ -441,7 +466,7 @@
                 alt="Class Image"
               />
               <div class="card-body">
-                <h5 class="card-title">Basic Math Decimal 1</h5>
+                <h5 class="card-title">Advance Biologhy</h5>
                 <p class="card-text">
                   <span>
                     <svg
@@ -492,7 +517,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="open">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="open"
+            data-topic="engineering"
+          >
             <div class="card">
               <span class="chip-open">Open</span>
               <img
@@ -552,7 +581,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3" data-open="open">
+          <div
+            class="col-md-6 col-lg-3 card-container"
+            data-open="open"
+            data-topic="programming"
+          >
             <div class="card">
               <span class="chip-open">Open</span>
               <img
