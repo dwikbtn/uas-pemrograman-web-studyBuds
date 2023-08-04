@@ -66,7 +66,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"],
-.uneditable-input {   
+.uneditable-input {
   border-color: var(--primary-color);
 }
 
@@ -86,14 +86,15 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
   border-color: var(--light-primary-color);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
   outline: 0 none;
 }
 
-.text-primary{
-  color: var(--primary-color) !important;;
+.text-primary {
+  color: var(--primary-color) !important;
 }
 
 /* End reset css */
@@ -227,11 +228,14 @@ header {
 }
 
 /* Style for study room page */
+.classDivider {
+  width: 100%;
+  border-bottom: 1px solid var(--secondary-color);
+}
 #class-selection {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--secondary-color);
+  align-items: baseline;
 }
 #class-selection #room-type {
   font-weight: 600;
@@ -269,6 +273,52 @@ header {
   margin-left: 5px;
 }
 
+#class-collection {
+  margin-top: 58px;
+}
+
+.card {
+  margin: 10px;
+}
+.card > div {
+  padding: 8px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card-text {
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-text span {
+  margin-right: 8px;
+}
+
+.studyRoom-background {
+  background-image: url("/assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-card {
+  height: 52px;
+  margin-top: 16px;
+}
+
+.btn-card > span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
 .floating-div {
   position: absolute;
   display: none;
@@ -318,30 +368,30 @@ header {
   background-color: var(--dark-primary-color);
 }
 
-.btn-green:active{
+.btn-green:active {
   color: #ffffff !important;
   border: 1px solid var(--light-primary-color) !important;
   background-color: var(--light-primary-color) !important;
 }
 
-.background-auth{
-  background-image: url('/assets/background.png');
+.background-auth {
+  background-image: url("/assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.download-section{
-  background-image: url('/assets/background-download.svg');
+.download-section {
+  background-image: url("/assets/background-download.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--gray-color-1);
 }
 
-footer{
+footer {
   background-color: var(--dark-color);
 }
 
-footer .social-media a{
+footer .social-media a {
   width: 40px;
   height: 40px;
   font-size: 20px;
