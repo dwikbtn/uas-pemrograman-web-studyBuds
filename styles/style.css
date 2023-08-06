@@ -538,3 +538,18 @@ footer .social-media a {
     line-height: 1.5;
     color: #666;
 }
+
+.content-background{
+  background-image: url('/assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ol.list-desc{
+  list-style:decimal;
+}
+
+ol.list-desc > li{
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+}

@@ -1,17 +1,10 @@
-<!-- 
-    Nama Anggota Kelompok:
-    1. I Made Dwi Darma Putra (220401010105)
-    2. Channy Hodie Iubileaum Lim (220401010195)
-    3. Hilmi Maulana Mukhlis (220401010142)
-    4. Kristian Hananiel Hura (220401010289)
- -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Study Buds</title>
+    <title>Advance Biologhy | Study room</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,16 +15,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <!-- Page for landing page -->
-    <!-- TODO: Navbar section goes here: -->
     <header>
       <div class="container">
         <div class="header">
           <a href="/" class="header__logo">
-            <img src="./assets/Logo.svg" alt="Logo" />
+            <img src="../assets/Logo.svg" alt="Logo" />
           </a>
           <div class="header__browse">
             <button class="header__browse__btn">
@@ -82,135 +73,105 @@
           </div>
           <nav class="header__nav">
             <a href="/" class="header__nav__link">Home</a>
-            <a href="/pages/study-room.html" class="header__nav__link">
-              Study Room
-            </a>
+            <a href="/pages/study-room.html" class="header__nav__link"
+              >Study Room</a
+            >
+            <a href="#" class="header__nav__link">My Class</a>
           </nav>
           <div class="header__auth">
             <a
               href="/pages/login.html"
               class="header__auth__btn text-decoration-none"
+              >Sign In</a
             >
-              Sign In
-            </a>
             <a
               href="/pages/signup.html"
               class="header__auth__btn text-decoration-none"
+              >Sign Up</a
             >
-              Sign Up
-            </a>
           </div>
         </div>
       </div>
     </header>
-    <!-- TODO: Hero Section Goes here: -->
-    <section class="hero">
-      <div class="container">
-        <div class="left">
-          <h1>ITS TIME TO STUDY! LETS JOIN WITH STUDYBUDS</h1>
-
-          <p>
-            Dapatkan pengalaman belajar yang menyenangkan dengan StudyBuds! ITS
-            TIME TO STUDY! Mari bergabung sekarang!
-          </p>
-
-          <a
-            href="/pages/signup.html"
-            class="btn btn-green rounded-pill btn-card"
-          >
-            <span> Join Now </span>
-          </a>
+    <div class="studyRoom-background shadow-sm">
+      <div class="container pt-5">
+        <div class="row mb-3">
+          <div class="col-lg-9">
+            <h1 class="mb-2 text-primary fw-bold">Advance Biologhy</h1>
+            <div class="fs-5 mb-2">
+              <span class="text-primary"><i class="bi bi-calendar"></i></span> October 4th, 2023 | 12:00 - 13:00
+            </div>
+            <div class="fs-5">
+              <span class="text-primary"><i class="bi bi-people-fill"></i></span> 0/50 <span class="text-secondary fs-6">(1.000 people interested to join)</span>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center align-items-center">
+            <a href="#" class="btn btn-green rounded-pill w-75">Join Room</a>
+          </div>
         </div>
-        <div>
-          <img src="./assets/hero-image.png" alt="hero" />
+        <div class="row">
+          <div class="col">
+            <section id="class-selection">
+              <div id="room-type">
+                <div id="status-all" class="active">About Class</div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- TODO: Avalaible class goes here -->
-    <section class="avail-classes">
-      <h2>Join Available Class</h2>
-      <div class="container">
-        <section id="class-selection" style="justify-content: center">
-          <div id="room-type">
-            <div class="active">All Topics</div>
-            <div>Art</div>
-            <div>Biology</div>
-            <div>Business</div>
-            <div>Cooking</div>
-            <div>Digital</div>
-            <div>Fashion</div>
-            <div>Geography</div>
+    </div>
+    <div class="content-background">
+      <div class="container mt-2 pb-3">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body py-3 px-4">
+                <h5 class="card-title fw-bold">Description</h5>
+                <img src="/assets/biologhy.jpg" class="img-fluid rounded my-3" alt="Image">
+                <p>
+                Welcome to our cutting-edge online course on Advanced Biology! This comprehensive program is designed to take your understanding of biology to new heights, delving into the intricacies of life sciences and providing you with an in-depth exploration of advanced biological concepts. Whether you're a passionate biology enthusiast, a pre-medical or pre-health student, or a professional seeking to expand your knowledge in the field, this course is tailored to meet your needs.
+                </p>
+                <br>
+                <p class="fw-bold">Course Overview:</p>
+                <br>
+                <ol class="list-desc">
+                    <li>Cellular and Molecular Biology: Dive into the fascinating world of cells and molecules, where you'll explore cellular structures, functions, and interactions. Understand cellular processes such as respiration, photosynthesis, cell signaling, and gene expression, and gain insights into how these mechanisms impact living organisms.</li>
+                    <li>Genetics and Genomics: Uncover the secrets of heredity and inheritance patterns. Study the principles of classical and molecular genetics, as well as advances in genomics, gene editing, and genetic engineering. Grasp the significance of genomics in healthcare and its potential for future advancements.</li>
+                    <li>Evolutionary Biology: Journey through time to understand the mechanisms of evolution and the principles that govern the diversity of life on Earth. Analyze the evidence for evolution and learn about natural selection, speciation, and adaptation.</li>
+                    <li>Ecology and Environmental Biology: Explore the intricate relationships between living organisms and their environment. Study ecosystems, population dynamics, biodiversity, and the impact of human activities on the natural world. Discover how ecology plays a vital role in conservation efforts and sustainable practices.</li>
+                    <li>Physiology and Anatomy: Delve into the structures and functions of living organisms. Investigate the physiological systems of humans and other organisms, including the cardiovascular, respiratory, nervous, and endocrine systems. Understand how these systems work together to maintain homeostasis.</li>
+                    <li>Biotechnology and Bioinformatics: Learn about the cutting-edge fields of biotechnology and bioinformatics, where biology meets technology and data science. Explore genetic engineering, DNA sequencing, and computational biology, and understand how these innovations are revolutionizing the biomedical industry.</li>
+                    <li>Current Research and Applications: Stay up-to-date with the latest discoveries and breakthroughs in the field of biology. Explore case studies and real-world applications of advanced biological concepts, and understand their implications in medicine, agriculture, and biotechnology.</li>
+                    <li>Interactive Learning and Support: Our course offers a dynamic learning environment with interactive lectures, multimedia resources, and practical exercises. You'll have access to experienced instructors and a supportive community of fellow learners to enhance your learning journey.</li>
+                </ol>
+                <br>
+                <p>
+                Join us on this captivating voyage into the realm of Advanced Biology and uncover the mysteries of life's complexity. Enroll now to elevate your biological knowledge and gain a competitive edge in your academic or professional pursuits. Discover the wonders of biology and its significant impact on shaping the world we live in!
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-        <div id="class-collection" class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-3" class-status="open">
-              <div class="card rounded-3">
-                <img
-                  src="../assets/math.jpg"
-                  class="card-img-top"
-                  alt="Class Image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Basic Math Decimal 1</h5>
-                  <p class="card-text">
-                    <span>
-                      <svg
-                        width="12"
-                        height="14"
-                        viewBox="0 0 12 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 6.33301H2.66667V7.66634H4V6.33301ZM6.66667 6.33301H5.33333V7.66634H6.66667V6.33301ZM9.33333 6.33301H8V7.66634H9.33333V6.33301ZM10.6667 1.66634H10V0.333008H8.66667V1.66634H3.33333V0.333008H2V1.66634H1.33333C0.593333 1.66634 0.00666666 2.26634 0.00666666 2.99967L0 12.333C0 12.6866 0.140476 13.0258 0.390524 13.2758C0.640573 13.5259 0.979711 13.6663 1.33333 13.6663H10.6667C11.4 13.6663 12 13.0663 12 12.333V2.99967C12 2.26634 11.4 1.66634 10.6667 1.66634ZM10.6667 12.333H1.33333V4.99967H10.6667V12.333Z"
-                          fill="#279B24"
-                        />
-                      </svg>
-                    </span>
-                    August 10, 2023
-                  </p>
-                  <p class="card-text">
-                    <span>
-                      <svg
-                        width="16"
-                        height="12"
-                        viewBox="0 0 16 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7 12C7 12 6 12 6 11C6 10 7 7 11 7C15 7 16 10 16 11C16 12 15 12 15 12H7ZM11 6C11.7956 6 12.5587 5.68393 13.1213 5.12132C13.6839 4.55871 14 3.79565 14 3C14 2.20435 13.6839 1.44129 13.1213 0.87868C12.5587 0.316071 11.7956 0 11 0C10.2044 0 9.44129 0.316071 8.87868 0.87868C8.31607 1.44129 8 2.20435 8 3C8 3.79565 8.31607 4.55871 8.87868 5.12132C9.44129 5.68393 10.2044 6 11 6Z"
-                          fill="#279B24"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M5.216 12.0004C5.06776 11.6882 4.99382 11.346 5 11.0004C5 9.64543 5.68 8.25043 6.936 7.28043C6.30909 7.08726 5.65595 6.9928 5 7.00043C1 7.00043 0 10.0004 0 11.0004C0 12.0004 1 12.0004 1 12.0004H5.216Z"
-                          fill="#279B24"
-                        />
-                        <path
-                          d="M4.5 6C5.16304 6 5.79893 5.73661 6.26777 5.26777C6.73661 4.79893 7 4.16304 7 3.5C7 2.83696 6.73661 2.20107 6.26777 1.73223C5.79893 1.26339 5.16304 1 4.5 1C3.83696 1 3.20107 1.26339 2.73223 1.73223C2.26339 2.20107 2 2.83696 2 3.5C2 4.16304 2.26339 4.79893 2.73223 5.26777C3.20107 5.73661 3.83696 6 4.5 6Z"
-                          fill="#279B24"
-                        />
-                      </svg>
-                    </span>
-                    30/50
-                  </p>
-                  <a href="/pages/study-page-1.html" class="btn btn-green rounded-pill w-100 btn-card"
-                    ><span>Join Room</span></a
-                  >
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body py-3 px-4">
+                <h5 class="card-title fw-bold">Host</h5>
+                <div class="d-flex my-4 gap-3">
+                  <div class="avatar">
+                    <img src="/assets/profile.png" alt="Profile Picture" class="rounded-circle">
+                  </div>
+                  <div class="fw-bold fs-6 d-flex align-items-center">
+                    Dr. Kusanagi Sensei
+                  </div>
                 </div>
+                <h5 class="card-title fw-bold">Class Status</h5>
+                <h5 class="card-title fw-bold text-warning">Restricted</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <a href="/pages/study-room.html" class="see-all"
-        >See All Available Study Room</a
-      >
-    </section>
     <!-- Download Section -->
     <section class="container-fluid download-section">
       <div class="row">
@@ -304,7 +265,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Bootstrap javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
