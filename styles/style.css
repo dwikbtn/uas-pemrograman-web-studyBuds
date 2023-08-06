@@ -526,3 +526,15 @@ footer .social-media a {
   height: 40px;
   font-size: 20px;
 }
+
+.about-content h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
